@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "9.19.0",
     "eslint-config-next": "15.1.6",
     "next": "15.1.6",
     "prop-types": "^15.8.1",
     "react": "19.0.0",
     "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0"
   }
 }
