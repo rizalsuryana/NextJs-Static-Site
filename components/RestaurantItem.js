@@ -1,19 +1,26 @@
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import Card from './styled/Card';
+import Container from './styled/Container';
+import Image from 'next/image';
 
 const RestaurantItem = ({ id, pictureId, name, description }) => {
   return (
-    <div className="card">
-      <img src={`https://restaurant-api.dicoding.dev/images/small/${pictureId}`} alt={name} />
+    <Card>
+      <Image
+        width={375}
+        height={250}
+        src={`https://restaurant-api.dicoding.dev/images/small/${pictureId}`}
+        alt={name} />
 
-      <div className="container">
+      <Container>
 
         <h2><Link href={`/detail/${id}`}>{name}</Link></h2>
         <p>{description}</p>
         <br />
-      </div>
-    </div>
+      </Container>
+    </Card>
   );
 };
 
